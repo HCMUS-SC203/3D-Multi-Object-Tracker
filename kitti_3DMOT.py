@@ -161,7 +161,9 @@ def tracking_val_seq(arg):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='arg parser')
-    parser.add_argument('--cfg_file', type=str, default="config/global/second_iou_mot.yaml",
+    # parser.add_argument('--cfg_file', type=str, default="config/global/second_iou_mot.yaml",
+    #                     help='specify the config for tracking')
+    parser.add_argument('--cfg_file', type=str, default="config/global/pvrcnn_mot.yaml",
                         help='specify the config for tracking')
     args = parser.parse_args()
     tracking_val_seq(args)
